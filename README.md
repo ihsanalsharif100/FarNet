@@ -2,7 +2,7 @@
 
 this project lets users stream their windows device into a web browser
 
-#how to compile
+# how to compile
 
 # 1.screemstream
 
