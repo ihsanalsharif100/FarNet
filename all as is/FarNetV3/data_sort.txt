@@ -1,5 +1,0 @@
-RSystem cycles
-Delay ms
-Mode auto/manual
-SampleRate
-Record length ms

@@ -1,7 +1,0 @@
-this program sends your current screen into a websocket server
-
-to use this program you only need to run the file
-and it will set it self up automatically
-
-but it will only run at the default settings to change the default settings
-open data.txt and to know what each line does you need to open data_sort.txt
