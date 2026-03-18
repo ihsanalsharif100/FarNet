@@ -1,6 +1,6 @@
 <img id="screen" alt="Image" loading="lazy" />
 <script>
-const ws_img = new WebSocket("ws://192.168.1.109:8084"); // change to your server address
+const ws_img = new WebSocket("ws://putyourip\url:8084"); // change to your server address
 const img = document.getElementById("screen");
 
 ws_img.binaryType = "arraybuffer"; // ensure we receive raw bytes
@@ -47,7 +47,7 @@ function startAudio() {
         sampleRate: SAMPLE_RATE
     });
 
-    ws = new WebSocket("ws://192.168.1.109:8083");
+    ws = new WebSocket("ws://putyourip\url:8083");
     ws.binaryType = "arraybuffer";
 
     ws.onopen = () => {
