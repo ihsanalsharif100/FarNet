@@ -7,18 +7,13 @@ this project lets users stream their windows device into a web browser
 # 1.screemstream
 
 ## 1.download boost library
-
 where?
-
-from here {
-
+from here
+```
 https://www.boost.org/releases/latest/
-
 needed:whatever your OS is.zip
-
 how:download the zip and unzip it into C:\c++\lib\ or what you have in your os
-
-}
+```
 
 or you could run in the cmd this
 ```bash
@@ -29,16 +24,16 @@ cd vcpkg
 vcpkg install boost:x64-mingw-static
 ```
 
-## 2.put this in Include directory:
+## 2.put this in Include directory
 ```path
 C:\path to vcpkg\installed\x64-mingw-static\include
 ```
-## 3.and this in the Library directory:
+## 3.and this in the Library directory
 ```path
 C:\path to vcpkg\installed\x64-mingw-static\lib
 ```
 
-## 4.add this to the linker librares{
+## 4.add this to the linker librares
 ```LinkerLib
 mswsock
 ws2_32
@@ -47,8 +42,7 @@ ole32
 user32
 gdiplus
 ```
-}
-or this in the other linker settings{
+or this in the other linker settings
 ```OtherLinkerSettings
 -lgdi32
 -lmswsock
@@ -57,4 +51,3 @@ or this in the other linker settings{
 -luser32
 -lgdiplus
 ```
-}
