@@ -4,7 +4,7 @@ this project lets users stream their windows device into a web browser
 
 #how to compile
 
-#1.screemstream
+# 1.screemstream
 
 1.download boost library
 
