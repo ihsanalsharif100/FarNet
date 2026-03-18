@@ -1,12 +1,12 @@
-# FarNet
+## FarNet
 
 this project lets users stream their windows device into a web browser
 
 #how to compile
 
-# 1.screemstream
+## 1.screemstream
 
-1.download boost library
+# 1.download boost library
 
 where?
 
@@ -20,9 +20,7 @@ how:download the zip and unzip it into C:\c++\lib\ or what you have in your os
 
 }
 
-or you could run in the cmd this{
-
-run in cmd{
+or you could run in the cmd this
 ```bash
 color 2 & ::not optional
 git clone https://github.com/microsoft/vcpkg & :: download vcpkg and you need git
@@ -30,17 +28,17 @@ cd vcpkg
 .\bootstrap-vcpkg.bat
 vcpkg install boost:x64-mingw-static
 ```
-}
 
-2.put this in Include directory:
+# 2.put this in Include directory:
+```path
+C:\path to vcpkg\installed\x64-mingw-static\include
+```
+# 3.and this in the Library directory:
+```path
+C:\path to vcpkg\installed\x64-mingw-static\lib
+```
 
-C:\path\to\vcpkg\installed\x64-mingw-static\include
-
-3.and this in the Library directory:
-
-C:\path\to\vcpkg\installed\x64-mingw-static\lib
-
-4.add this to the linker librares{
+# 4.add this to the linker librares{
 ```LinkerLib
 mswsock
 ws2_32
