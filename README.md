@@ -12,7 +12,7 @@ from here
 ```
 https://www.boost.org/releases/latest/
 needed:whatever your OS is.zip
-how:download the zip and unzip it into C:\c++\lib\ or what you have in your os
+how:download the zip and unzip it into C:\c++\lib\ or wherever you want
 ```
 
 or you could run in the cmd this
