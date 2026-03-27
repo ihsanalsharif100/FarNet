@@ -1,6 +1,10 @@
 # FarNet
 
-this project lets users stream their windows device into a web browser
+this project lets users stream their windows device into a web browser or anything if they want
+
+very fast:if it can run on an i5 from 2012 and 8gb ddr3 then it can run on anything
+
+very customizable:you can control everything from the port to the quilty from a txt file
 
 # how to compile
 
