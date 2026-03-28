@@ -27,7 +27,7 @@ Control ports, quality, and behavior
 # what you need
 1. CodeBlocks - completely optional
 2. C++ compiler - use gnu for the instructions but you can still use any other
-3. boost you can download it via vcpkg or by this way [https://github.com/ihsanalsharif100/FarNet/edit/V2.0.0/README.md#how-to-download-boost]
+3. boost you can download it via vcpkg or by this way (https://github.com/ihsanalsharif100/FarNet/blob/V2.0.0/README.md#how-to-download-boost)
 
 # how to compile
 
