@@ -58,9 +58,11 @@ or this in the other linker settings
 in build options -> search directory -> Compiler
 C:\c++\lib\boost
 ```
+# mouse and keyboard control (RIMOUSE V1 and RECIVEINPUT V1 folders)
 
+## 1. add boost to the project search directory (compiler)
 
-
+## 2. add -lws2_32 to your other linker options or ws2_32 to your linker libraries 
 
 # how to download boost
 open: https://www.boost.org/releases/latest/
