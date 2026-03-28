@@ -1,3 +1,5 @@
+<img width="100%" height="180" alt="FarNet-no background" src="https://github.com/user-attachments/assets/b6b8ebca-21bf-420a-846a-7e7e3153a2cb" style="object-fit:scale-down;"/>
+
 # FarNet
 
 this project lets users stream their windows device into a web browser or anything if they want
