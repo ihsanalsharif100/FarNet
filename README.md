@@ -1,21 +1,41 @@
-<img width="100%" height="180" alt="FarNet-no background" src="https://github.com/user-attachments/assets/b6b8ebca-21bf-420a-846a-7e7e3153a2cb" style="object-fit:scale-down;"/>
+<img width="100%" height="auto" alt="FarNet" src="https://github.com/user-attachments/assets/b6b8ebca-21bf-420a-846a-7e7e3153a2cb" />
 
 # FarNet
 
-this project lets users stream their windows device into a web browser or anything if they want
+FarNet is a high-performance C++ application for streaming a Windows screen and audio to a web browser, with remote control capabilities.
 
-very fast:if it can run on an i5 from 2012 and 8gb ddr3 then it can run on anything
+## Designed to be lightweight, fast, and highly customizable.
 
-very customizable:you can control everything from the port to the quilty from a txt file
+# Features
+
+## Screen & Audio Streaming
+Real-time screen streaming to browser clients
+Audio streaming support
+Optimized for low-end systems (runs on older hardware like i5 + DDR3)
+
+## Remote Control
+Mouse control (synchronized positioning)
+Keyboard input support
+Enables full remote interaction (similar to TeamViewer / AnyDesk)
+
+## Customization
+Configurable via text files
+Control ports, quality, and behavior
+
+
+# Raw Steps to build
+# what you need
+1. CodeBlocks - completely optional
+2. C++ compiler - use gnu for the instructions but you can still use any other
+3. boost you can download it via vcpkg or by this way [https://github.com/ihsanalsharif100/FarNet/edit/V2.0.0/README.md#how-to-download-boost]
 
 # how to compile
 
-# 1.screemstream
+this section gives instructions on how to compile the code correctly
 
-## 1.download boost library
-you will find instructions down
+## 1.screemstream
 
-## 2.add this to the linker librares
+### 1. add this to the linker librares
 ```LinkerLib
 mswsock
 ws2_32
@@ -24,7 +44,7 @@ ole32
 user32
 gdiplus
 ```
-or this in the other linker settings
+#### or this in the other linker settings
 ```OtherLinkerSettings
 -lgdi32
 -lmswsock
@@ -34,17 +54,15 @@ or this in the other linker settings
 -lgdiplus
 ```
 
-## 3.add this to the project search directory
+### 2. add this to the project search directory
 ```
 in build options -> search directory -> Compiler
 C:\c++\lib\boost
 ```
 
-# 2.soundstream (Farnet folder)
-## 1.download boost
-1.you don't need to do this if you already downloaded boost for the screenshot file
+# 2. soundstream (Farnet folder)
 
-## 2.add this to the linker librares
+## 1. add this to the linker librares
 ```LinkerLib
 mswsock
 ws2_32
@@ -55,28 +73,43 @@ or this in the other linker settings
 -lws2_32
 ```
 
-## 3.add this to the project search directory
+## 2. add boost to the project search directory
 ```
 in build options -> search directory -> Compiler
-C:\c++\lib\boost
+C:\the\directory\boost\
 ```
+
 # mouse and keyboard control (RIMOUSE V1 and RECIVEINPUT V1 folders)
 
 ## 1. add boost to the project search directory (compiler)
+```
+in build options -> search directory -> Compiler
+C:\the\directory\boost\
+```
 
-## 2. add -lws2_32 to your other linker options or ws2_32 to your linker libraries 
+## 2. add the linker library
+add
+```
+-lws2_32
+```
+to your other linker options or 
+```
+ws2_32
+````
+to your linker libraries 
+
 
 # how to download boost
-open: https://www.boost.org/releases/latest/
+open: [https://www.boost.org/releases/latest/]
 
-download: whatever your OS is.zip
+download: from the windows section get the version you want.zip (this project is on 1.90 so it is boost_1_90_0.zip)
 
 what to do :download the zip and unzip it into C:\c++\lib\ or wherever path you want
 
 or you could run in the cmd this
 ```bash
-color 2 & ::not optional
-git clone https://github.com/microsoft/vcpkg & :: download vcpkg and you need git
+color 2 & ::this line is not optional
+git clone https://github.com/microsoft/vcpkg & :: download vcpkg and you need git to download it
 cd vcpkg
 .\bootstrap-vcpkg.bat
 vcpkg install boost:x64-mingw-static
