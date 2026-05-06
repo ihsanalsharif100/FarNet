@@ -25,7 +25,7 @@
 #define TRUE 1
 #define FALSE 0
 
-//i don't know what does are but they are
+//i don't know what this does are but they are needed
 #include <objidl.h>
 #include <ole2.h>
 #include <propidl.h>
