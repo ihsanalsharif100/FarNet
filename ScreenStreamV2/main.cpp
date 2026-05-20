@@ -25,7 +25,7 @@
 #define TRUE 1
 #define FALSE 0
 
-//i don't know what this does are but they are needed
+//i don't know what does are but they are
 #include <objidl.h>
 #include <ole2.h>
 #include <propidl.h>
@@ -44,14 +44,9 @@ namespace net = boost::asio;            // from <boost/asio.hpp>
 using tcp = boost::asio::ip::tcp;       // from <boost/asio/ip/tcp.hpp>
 using namespace std;
 
-///FarNet screen stream system Version 2
-//changes from V1
-//removed MakeTimeLine line from data.txt as it became useless
-//increased speed by turning the screen into a jpg
-//lowered network bottleneck by reducing sent image size to ~2-60% of original size
-//made an adjustable quality setting
-//removed useless parts of code
-//removed screenshot variable
+///FarNet screen stream system Version 2.1
+//removed the part that saves the image as it isn't usful for now
+
 
 void setup(){
     cout << "there was no data file creating one"<< endl;
@@ -290,17 +285,6 @@ int main(){
                         NumberOfRepeat = 0;
                         cout << "reloaded system settings";
                         this_thread::sleep_for(chrono::milliseconds(SleepTime));
-
-                        cout << "security check";
-
-                        //ios::binary flag makes it safe
-                        ofstream security_file("output.jpg", ios::binary);  // binary flag is essential
-
-                        security_file.write(
-                            reinterpret_cast<const char*>(lastScreenshotData.data()),
-                            lastScreenshotData.size()
-                        );
-                        security_file.close();
                     }
 
                     this_thread::sleep_for(chrono::milliseconds(speed));
